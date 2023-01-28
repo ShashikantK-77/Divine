@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import Imagecards from '../../../public/headbg.jpg'
+import Proa from '../../../public/specialcategory/a.jpg'
+import Prob from '../../../public/specialcategory/b.jpg'
+import Proc from '../../../public/specialcategory/c.jpg'
+import Prod from '../../../public/specialcategory/d.jpg'
 
 const Cards = () => {
   return (
@@ -19,7 +22,7 @@ const Cards = () => {
     <div class="flex flex-wrap -m-4">
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-        <Image class="lg:h-48 md:h-36 w-full object-cover object-center hover:brightness-75" width="500" height="500" src={Imagecards}/>
+        <Image class="lg:h-48 md:h-36 w-full object-cover object-center hover:brightness-75" width="500" height="500" src={Proa}/>
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -29,31 +32,31 @@ const Cards = () => {
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-        <Image class="lg:h-48 md:h-36 w-full object-cover object-center hover:brightness-75" width="500" height="500" src={Imagecards}/>
+        <Image class="lg:h-48 md:h-36 w-full object-cover object-center hover:brightness-75" width="500" height="500" src={Prob}/>
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Ghoongroo</h2>
           <p class="mt-1">$21.15</p>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-        <Image class="lg:h-48 md:h-36 w-full object-cover object-center hover:brightness-75" width="500" height="500" src={Imagecards}/>
+        <Image class="lg:h-48 md:h-36 w-full object-cover object-center hover:brightness-75" width="500" height="500" src={Proc}/>
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Hair</h2>
           <p class="mt-1">$12.00</p>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-        <Image class="lg:h-48 md:h-36 w-full object-cover object-center hover:brightness-75" width="500" height="500" src={Imagecards}/>
+        <Image class="lg:h-48 md:h-36 w-full object-cover object-center hover:brightness-75" width="500" height="500" src={Prod}/>
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Long Chain</h2>
           <p class="mt-1">$18.40</p>
         </div>
       </div>

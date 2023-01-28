@@ -7,6 +7,7 @@ import Imagebannerc from '../../../public/products/c.jpg'
 import Imagebannerd from '../../../public/products/d.jpg'
 import Image from 'next/image';
 import Link from 'next/link'
+import clirclebg from '../../../public/circle-helf1.png'
 
 // Default theme
 import '@splidejs/react-splide/css';
@@ -19,15 +20,17 @@ import '@splidejs/react-splide/css/sea-green';
 import '@splidejs/react-splide/css/core';
 
 
+
 const Categories = () => {
   return (
-    <div>
-    <div className='flex flex-wrap  '>
+    <div className='relative'>
+    <Image className='absolute top-12 left-5 z-0'  src={clirclebg} alt='bgcircle' />
+    <div className='flex flex-wrap   z-10 '>
 
         <div className='m-auto'>
                 <h2 className='text-xl text-gray-400'>  Shop by </h2>
                 <h1 className='text-6xl mb-6 text-gray-600'>categories</h1>
-                <Link href="/category" className="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600  text-lg ">View All</Link>
+                <Link href="/category" className="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 cursor-pointer  text-lg ">View All</Link>
                          
 
         </div>
@@ -66,7 +69,7 @@ const Categories = () => {
       <SplideSlide>
         <Link href='/category'>
       <div className={styles.parentcat}>
-      <Image src={Imagebannerb} className="w-3/3" alt="Image 1"/>
+      <Image src={Imagebannerc} className="w-3/3" alt="Image 1"/>
       </div>
       <div className={styles.chiledcat}> 
       <h2 className='px-10 py-2 text-gray-600 text-lg '>Product</h2>

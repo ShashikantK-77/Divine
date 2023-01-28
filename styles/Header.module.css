@@ -1,8 +1,200 @@
-.Navbar{
-    height: 12vh;
-    text-align: center;
-    vertical-align: middle;
+
+
+ .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    /* background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../images/work-8.jpg); */
+    background-size: cover;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 7%;
+    /* display: flex;
+    align-items: center;
+    justify-content:space-between; */
+    z-index: 1000;
+    list-style: none;
+    line-height: none !important;
 }
+
+
+
+
+
+.header a img {
+    max-width: 13%;
+    /* -webkit-box-shadow: 2px 90px 0 rgb(0 0 0 / 5%);
+    box-shadow: 2px 2px 0 rgb(0 0 0 / 5%); */
+    float: left;
+}
+
+.header .navbar  {
+    float: right;
+    padding: 7px 0;
+}
+
+
+.header .navbar ul {
+    list-style: none;
+
+}
+
+.header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.header .navbar ul li a {
+
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+  
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header .navbar ul li a:hover {
+
+    /* text-shadow: 2px 4px #000000;
+    color: orange; */
+}
+
+.active {
+
+    /* text-shadow: 2px 4px #000000;
+    color: orange; */
+    border-bottom: 4px orange solid;
+}
+
+.header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 220px;
+    height: auto;
+    background: rgb(255, 255, 255);
+    color: black;
+    display: none;
+}
+
+.header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba (0, 0, 0, 0.1);
+}
+
+.header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+
+}
+
+.header .navbar ul li:focus-within>ul,
+.header .navbar ul li:hover>ul {
+    display: initial;
+}
+
+.menubar {
+    display: none;
+}
+
+.header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+
+}
+@media(max-width:991px) {
+.header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+/* background-color: rgba(33, 25, 7, 4); */
+}
+
+.header {
+padding: 10px;
+}
+
+.header label {
+display: initial;
+color: rgb(0, 0, 0);
+}
+
+.header .navbar {
+position: absolute;
+top: 100%;
+left: 0%;
+right: 0%;
+background: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+display: none;
+
+}
+
+.header .navbar ul li {
+width: 100%;
+height: auto;
+}
+
+.header .navbar ul li ul {
+position: relative;
+width: 100%;
+height: auto;
+
+}
+
+.header .navbar ul li ul li {
+background: rgb(255, 255, 255);
+color: black;
+
+}
+
+.header .navbar ul li ul li ul {
+width: 100%;
+height: auto;
+left: 0;
+
+}
+
+.menubar:checked~.navbar {
+display: initial;
+}
+
+.header a img {
+max-width: 40%;
+/* -webkit-box-shadow: 2px 90px 0 rgb(0 0 0 / 5%);
+box-shadow: 2px 2px 0 rgb(0 0 0 / 5%); */
+float: right;
+}
+.mainteam{
+display: flex;
+flex-direction: column;
+}
+.visionmission{
+height: auto;
+}
+.introimg img{
+max-width: 100%;
+}
+.intro{
+padding: 10px 25px;
+}
+}
+
+
+
+
+
+
+
+
 .mainhead{
     width: 100%;
     height: auto;
