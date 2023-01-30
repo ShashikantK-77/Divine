@@ -5,7 +5,7 @@ const Header = () => {
     <div className={styles.mainhead}>
     <h2>Subcategory Header</h2>
 
-    <div className={styles.navcategory}>
+    {/* <div className={styles.navcategory}>
         <ul className={styles.ul}>
           <li className={styles.li}> <p className={styles.p}>Category1</p> </li>
           <li className={styles.li}> <p className={styles.p}>Category2</p> </li>
@@ -13,7 +13,7 @@ const Header = () => {
           <li className={styles.li}> <p className={styles.p}>Category4</p> </li>
           <li className={styles.li}> <p className={styles.p}>Category5</p> </li>
         </ul>
-    </div>
+    </div> */}
     </div>
   )
 }

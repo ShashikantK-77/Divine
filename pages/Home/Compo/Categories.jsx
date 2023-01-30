@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from '../../../styles/Header.module.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import Imagebannera from '../../../public/products/a.jpg'
@@ -19,17 +19,26 @@ import '@splidejs/react-splide/css/sea-green';
 // or only core styles
 import '@splidejs/react-splide/css/core';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
+
 
 
 const Categories = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className='relative'>
     <Image className='absolute top-12 left-5 z-0'  src={clirclebg} alt='bgcircle' />
     <div className='flex flex-wrap   z-10 '>
 
-        <div className='m-auto'>
-                <h2 className='text-xl text-gray-400'>  Shop by </h2>
-                <h1 className='text-6xl mb-6 text-gray-600'>categories</h1>
+        <div className='m-auto' data-aos="fade-down" data-aos-easing="ease-in-back" data-aos-delay="500">
+                <h2 className='text-xl text-gray-400 z-10'>  Shop by </h2>
+                <h1 className='text-6xl mb-6 text-gray-600 z-10'>categories</h1>
                 <Link href="/category" className="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 cursor-pointer  text-lg ">View All</Link>
                          
 

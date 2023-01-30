@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className={styles.header}>
        <input type="checkbox" className={styles.menubar} />
        <label for="menubar">Menu</label>
-       <Link  href={"/Vibehealth"} >
+       <Link  href={"/"} >
 
    
        <Image className="logo" src={logodivine} alt='logo' />
@@ -21,25 +21,25 @@ const Navbar = () => {
        <nav className={styles.navbar}>
            <ul>
 
-   <li><Link  href={"/Vibehealth"}>Home</Link></li>  
+   <li><Link  href={"/"}>Home</Link></li>  
 
-   <li><Link  href={"/about"}>Accesssories</Link>
+   <li><Link  href={"/accesssories"}>Accesssories</Link>
    <ul>
-   <li><Link  href={"/Vibehealth"}>Flowers</Link></li>  
-   <li><Link  href={"/about"}>Ghungroo</Link></li>
-   <li><Link  href={"/Vibehealth"}>Hair </Link></li>  
-   <li><Link  href={"/about"}>Hair Rings</Link></li>
-   <li><Link  href={"/Vibehealth"}>Kunjalam</Link></li>  
-   <li><Link  href={"/about"}>Nattuvangam </Link></li>
+   <li><Link  href={"/accesssories/flowers"}>Flowers</Link></li>  
+   <li><Link  href={"/accesssories/ghungroo"}>Ghungroo</Link></li>
+   <li><Link  href={"/accesssories/hair"}>Hair</Link></li>  
+   <li><Link  href={"/accesssories/hairrings"}>Hair Rings</Link></li>
+   <li><Link  href={"/accesssories/Kunjalam"}>Kunjalam</Link></li>  
+   <li><Link  href={"/accesssories/Nattuvangam"}>Nattuvangam </Link></li>
    </ul>
    </li> 
 
-   <li><Link  href={"/Vibehealth"}>Ornaments</Link>
+   <li><Link  href={"/ornaments"}>Ornaments</Link>
    <ul>
-   <li><Link  href={"/Vibehealth"}>Belts </Link></li>  
-   <li><Link  href={"/about"}>Centre Matti/Single Chutti</Link></li>
-   <li><Link  href={"/Vibehealth"}>Ear Ornaments </Link></li>  
-   <li><Link  href={"/about"}>Hand Ornaments</Link></li>
+   <li><Link  href={"/ornaments/belts"}>Belts </Link></li>  
+   <li><Link  href={"/ornaments/CentreMattiSingleChutti"}>Centre Matti/Single Chutti</Link></li>
+   <li><Link  href={"/ornaments/earornaments"}>Ear Ornaments </Link></li>  
+   <li><Link  href={"/ornaments/handornaments"}>Hand Ornaments</Link></li>
   
    </ul>
    </li> 
@@ -48,27 +48,29 @@ const Navbar = () => {
    
    </li> 
 
-   <li><Link  href={"/product"}>Temple Jwellery</Link>
+   <li><Link  href={"/templejwellery"}>Temple Jwellery</Link>
    <ul>
-   <li><Link  href={"/Vibehealth"}>Ear Ornaments </Link></li>  
-   <li><Link  href={"/about"}>Headset </Link></li>
-   <li><Link  href={"/Vibehealth"}>Necklace </Link></li>  
-   <li><Link  href={"/about"}>Long Chain</Link></li>
+   <li><Link  href={"/templejwellery/earornaments"}>Ear Ornaments </Link></li>  
+   <li><Link  href={"/templejwellery/headset"}>Headset </Link></li>
+   <li><Link  href={"/templejwellery/necklace"}>Necklace </Link></li>  
+   <li><Link  href={"/templejwellery/longchain"}>Long Chain</Link></li>
   
    </ul>
    </li>
 
-   <li><Link  href={"/contact"}> Costumes</Link>
+   <li><Link  href={"/costumes"}> Costumes</Link>
    <ul>
-   <li><Link  href={"/Vibehealth"}>Bharatanatyam</Link></li>  
-   <li><Link  href={"/about"}>Kuchipudi</Link></li>
-   <li><Link  href={"/Vibehealth"}>Mohiniyattam </Link></li>  
+   <li><Link  href={"/costumes/bharatanatyam"}>Bharatanatyam</Link></li>  
+   <li><Link  href={"/costumes/Kuchipudi"}>Kuchipudi</Link></li>
+   <li><Link  href={"/costumes/mohiniyattam"}>Mohiniyattam </Link></li>  
    </ul>
    </li>
 
    <li><Link  href={"/contact"}> Order Costume</Link></li>
 
    <li><Link  href={"/contact"}> Blog</Link></li>
+
+   <li><Link  href={"/contact"}> Contact</Link></li>
 
 
               

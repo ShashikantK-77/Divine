@@ -7,6 +7,7 @@ import Introduct from './Home/Compo/Introduct'
 import Cards from './Home/Compo/Cards'
 import Categories from './Home/Compo/Categories'
 import Upperfooter from './Home/Footer/Upperfooter'
+import Paralax from './Home/Compo/Paralax'
 
 // import Navbar from './Header/Navbar'
 
@@ -16,6 +17,7 @@ const Home = () => {
       <Header/>
   <Introduct/>
   <Categories/>
+  <Paralax/>
       {/* <Banner/> */}
       <Cards/>
 

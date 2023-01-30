@@ -1,5 +1,7 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
-
+import divinelogo from '../../../public/logodivine.png'
 
 
 const index = () => {
@@ -8,83 +10,48 @@ const index = () => {
     <div>
    
     <footer class="text-gray-500 body-font bg-slate-100">
-  <div class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+  <div class="container px-24 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
-        <span class="ml-3 text-xl">Tailblocks</span>
-      </a>
-      <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+      <Image className='m-auto' src={divinelogo} alt='logofooter'/>
+      <p class="mt-2 text-sm text-gray-500">We at "Divine Costumes" design and supply Costumes for various Drama and Dance activities for all School and College Programs.</p>
     </div>
     <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">Accesssories</h2>
         <nav class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
+        <li><Link className="text-gray-600 hover:text-gray-800"  href={"/accesssories/flowers"}>Flowers</Link></li>  
+   <li><Link className="text-gray-600 hover:text-gray-800"  href={"/accesssories/ghungroo"}>Ghungroo</Link></li>
+   <li><Link className="text-gray-600 hover:text-gray-800"  href={"/accesssories/hair"}>Hair</Link></li>  
+   <li><Link className="text-gray-600 hover:text-gray-800"  href={"/accesssories/hairrings"}>Hair Rings</Link></li>
+   <li><Link className="text-gray-600 hover:text-gray-800"  href={"/accesssories/Kunjalam"}>Kunjalam</Link></li>  
+   <li><Link className="text-gray-600 hover:text-gray-800"  href={"/accesssories/Nattuvangam"}>Nattuvangam </Link></li>
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">Ornaments</h2>
         <nav class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
+        <li><Link className="text-gray-600 hover:text-gray-800" href={"/ornaments/belts"}>Belts </Link></li>  
+   <li><Link className="text-gray-600 hover:text-gray-800"  href={"/ornaments/CentreMattiSingleChutti"}>Centre Matti/Single Chutti</Link></li>
+   <li><Link className="text-gray-600 hover:text-gray-800"  href={"/ornaments/earornaments"}>Ear Ornaments </Link></li>  
+   <li><Link className="text-gray-600 hover:text-gray-800"  href={"/ornaments/handornaments"}>Hand Ornaments</Link></li>
+  
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">Temple Jwellery</h2>
         <nav class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
+        <li><Link className="text-gray-600 hover:text-gray-800" href={"/templejwellery/earornaments"}>Ear Ornaments </Link></li>  
+   <li><Link className="text-gray-600 hover:text-gray-800" href={"/templejwellery/headset"}>Headset </Link></li>
+   <li><Link className="text-gray-600 hover:text-gray-800" href={"/templejwellery/necklace"}>Necklace </Link></li>  
+   <li><Link className="text-gray-600 hover:text-gray-800"  href={"/templejwellery/longchain"}>Long Chain</Link></li>
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">Costumes</h2>
         <nav class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
+        <li><Link className="text-gray-600 hover:text-gray-800"  href={"/costumes/bharatanatyam"}>Bharatanatyam</Link></li>  
+   <li><Link className="text-gray-600 hover:text-gray-800"  href={"/costumes/Kuchipudi"}>Kuchipudi</Link></li>
+   <li><Link className="text-gray-600 hover:text-gray-800" href={"/costumes/mohiniyattam"}>Mohiniyattam </Link></li>  
         </nav>
       </div>
     </div>
