@@ -1,13 +1,18 @@
 import React from 'react'
 import styles from '../../../styles/Header.module.css'
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/autoplay';
-import { Autoplay, Pagination, Navigation } from "swiper"
+// Default theme
+import '@splidejs/react-splide/css';
+
+// or other themes
+import '@splidejs/react-splide/css/skyblue';
+import '@splidejs/react-splide/css/sea-green';
+
+// or only core styles
+import '@splidejs/react-splide/css/core';
+
 import abslimg from '../../../public/headhero.png'
 
 import Image from 'next/image';
@@ -18,7 +23,7 @@ const Hero = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2" >
 
         <div className={styles.ab}>
-        <Swiper
+        {/* <Swiper
       spaceBetween={50}
       slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
@@ -33,7 +38,23 @@ const Hero = () => {
       <SwiperSlide className={styles.headb}>bbb</SwiperSlide>
       <SwiperSlide className={styles.headc}>ccc</SwiperSlide>
     
-    </Swiper>
+    </Swiper> */}
+
+    <Splide 
+      options={ {
+        rewind: true,
+        width : 1600,
+        autoplay: 'true',
+        type     : 'loop',
+        rewindSpeed: 10000,
+      }}
+      aria-label="My Favorite Images"
+    >
+  
+      <SplideSlide className={styles.heada}>aaa  </SplideSlide>
+      <SplideSlide className={styles.headb}>aaa  </SplideSlide>
+      <SplideSlide className={styles.headc}>aaa  </SplideSlide>
+    </Splide>
 
         </div>
         <div className={styles.cd}>
