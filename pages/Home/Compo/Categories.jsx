@@ -36,12 +36,10 @@ const Categories = () => {
     <Image className='absolute top-12 left-5 z-0'  src={clirclebg} alt='bgcircle' />
     <div className='flex flex-wrap   z-10 '>
 
-        <div className='m-auto' data-aos="fade-down" data-aos-easing="ease-in-back" data-aos-delay="500">
+        <div className='m-auto' data-aos="fade-down" data-aos-easing="ease-in-back" >
                 <h2 className='text-xl text-gray-400 z-10'>  Shop by </h2>
                 <h1 className='text-6xl mb-6 text-gray-600 z-10'>categories</h1>
                 <Link href="/category" className="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 cursor-pointer  text-lg ">View All</Link>
-                         
-
         </div>
 
  

@@ -12,8 +12,8 @@ const Paralax = () => {
     <div>
     <div className={styles.mainpara}>
         <div className={styles.chliedpara}  >
-            <h2 className='font-bold text-7xl text-white' data-aos="fade-down" data-aos-easing="ease-in-back" data-aos-delay="500">Divine costumes</h2>
-            <h5 className='font-semibold text-xl text-white' data-aos="fade-down" data-aos-easing="ease-in-back" data-aos-delay="700">Altering your dreams</h5>
+            <h2 className='font-bold text-7xl text-white' data-aos="fade-down" data-aos-easing="ease-in-back" >Divine costumes</h2>
+            <h5 className='font-semibold text-xl text-white' data-aos="fade-down" data-aos-easing="ease-in-back" >Altering your dreams</h5>
         </div>
     </div>
     </div>

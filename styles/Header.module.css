@@ -47,11 +47,11 @@
 
 .header .navbar ul li a {
 
-    padding: 5px 10px;
+    padding: 5px 20px;
     color: rgb(0, 0, 0);
     display: block;
-    text-transform: uppercase;
-    font-size: 13px;
+    /* text-transform: uppercase; */
+    font-size: 14px;
   
     font-family: 'Montserrat', sans-serif;
 }
@@ -83,6 +83,11 @@
 .header .navbar ul li ul li {
     width: 100%;
     border-top: 1px solid rgba (0, 0, 0, 0.1);
+}
+
+.header .navbar ul li ul li a:hover {
+    background-color:gray!important;
+    color:white;
 }
 
 .header .navbar ul li ul li ul {
@@ -200,7 +205,7 @@ padding: 10px 25px;
     width: 100%;
     height: auto;
     background-color:rgb(255, 255, 255);
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
     
     overflow: hidden;
     /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../public/headbg.jpg) fixed; */
@@ -258,7 +263,7 @@ padding: 10px 25px;
     z-index: 99;
     width: 100%;
     position: absolute;
-    bottom: -10px;
+    bottom: -70px;
 }
 .Bannerback{
     width: 100%;

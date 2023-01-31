@@ -14,18 +14,14 @@ import Paralax from './Home/Compo/Paralax'
 const Home = () => {
   return (
     <div >
-      <Header/>
-  <Introduct/>
-  <Categories/>
-  <Paralax/>
+      <Header />
+      <Introduct />
+      <Categories />
+      <Paralax />
       {/* <Banner/> */}
-      <Cards/>
-
-
-
-
-      <Upperfooter/>
-    <Footer/>
+      <Cards />
+      <Upperfooter />
+      <Footer />
     </div>
   )
 }
