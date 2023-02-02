@@ -33,96 +33,96 @@ const Categories = () => {
   }, [])
   return (
     <div className='relative'>
-    <Image className='absolute top-12 left-5 z-0'  src={clirclebg} alt='bgcircle' />
-    <div className='flex flex-wrap   z-10 '>
+      <Image className='absolute top-12 left-5 z-0'  src={clirclebg} alt='bgcircle' />
+      <div className='flex flex-wrap   z-10 '>
 
         <div className='m-auto' data-aos="fade-down" data-aos-easing="ease-in-back" >
-                <h2 className='text-xl text-gray-400 z-10'>  Shop by </h2>
-                <h1 className='text-6xl mb-6 text-gray-600 z-10'>categories</h1>
-                <Link href="/category" className="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 cursor-pointer  text-lg ">View All</Link>
+          <h2 className='text-xl text-gray-400 z-10'>  Shop by </h2>
+          <h1 className='text-6xl mb-6 text-gray-600 z-10'>categories</h1>
+          <Link href="/category" className="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 cursor-pointer  text-lg ">View All</Link>
         </div>
 
- 
-            
-        <Splide 
-      options={ {
-        rewind: true,
-        gap   : '1rem',
-        width: '70%',
-        height:'30%',
-        perPage    : 4,
-       
-        breakpoints: {
-		640:{
-			perPage: 1,
-            width: '100%',
-		},
-            } 
-      }}
-      aria-label="My Favorite Images"
-    >
-     
-      <SplideSlide>
-      <Link href='/category'>
-      <div className={styles.parentcat}>
-      <Image src={Imagebannera} className="w-3/3" alt="Image 1"/>
-      </div>
-      <div className={styles.chiledcat}> 
-      <h2 className='px-10 py-2 text-gray-600 text-lg '>Product</h2>
-      </div>
-      </Link>
-      </SplideSlide>
 
-      <SplideSlide>
-        <Link href='/category'>
-      <div className={styles.parentcat}>
-      <Image src={Imagebannerc} className="w-3/3" alt="Image 1"/>
-      </div>
-      <div className={styles.chiledcat}> 
-      <h2 className='px-10 py-2 text-gray-600 text-lg '>Product</h2>
-      </div>
-      </Link>
-      </SplideSlide>
 
-      <SplideSlide>
-       <Link href='/category'>
-      <div className={styles.parentcat}>
-      <Image src={Imagebannerc} className="w-3/3" alt="Image 1"/>
-      </div>
-      <div className={styles.chiledcat}> 
-      <h2 className='px-10 py-2 text-gray-600 text-lg '>Product</h2>
-      </div>
-      </Link>
-      </SplideSlide>
+        <Splide
+          options={{
+            rewind: true,
+            gap: '1rem',
+            width: '70%',
+            height: '30%',
+            perPage: 4,
 
-      <SplideSlide>
-        <Link href='/category'>
-      <div className={styles.parentcat}>
-      <Image src={Imagebannerd} className="w-3/3" alt="Image 1"/>
-      </div>
-      <div className={styles.chiledcat}> 
-      <h2 className='px-10 py-2 text-gray-600 text-lg '>Product</h2>
-      </div>
-      </Link>
-      </SplideSlide>
+            breakpoints: {
+              640: {
+                perPage: 1,
+                width: '100%',
+              },
+            }
+          }}
+          aria-label="My Favorite Images"
+        >
 
-      <SplideSlide>
-      <Link href='/category'>
-      <div className={styles.parentcat}>
-      <Image src={Imagebannerc} className="w-3/3" alt="Image 1"/>
-      </div>
-      <div className={styles.chiledcat}> 
-      <h2 className='px-10 py-2 text-gray-600 text-lg '>Product</h2>
-      </div>
-      </Link>
-      </SplideSlide>
-    </Splide>
-        </div>
-       
-    
-    
+<SplideSlide>
+            <Link href='/category'>
+              <div className={styles.parentcat}>
+                <Image src={Imagebannerd} className="w-3/3" alt="Image 1" />
+              </div>
+              <div className={styles.chiledcat}>
+                <h2 className='px-10 py-2 text-gray-600 text-lg '>Accessaries</h2>
+              </div>
+            </Link>
+          </SplideSlide>
 
-    {/* <div>
+          <SplideSlide>
+            <Link href='/category'>
+              <div className={styles.parentcat}>
+                <Image src={Imagebannerc} className="w-3/3" alt="Image 1" />
+              </div>
+              <div className={styles.chiledcat}>
+                <h2 className='px-10 py-2 text-gray-600 text-lg '>Ornaments</h2>
+              </div>
+            </Link>
+          </SplideSlide>
+
+          <SplideSlide>
+            <Link href='/category'>
+              <div className={styles.parentcat}>
+                <Image src={Imagebannerc} className="w-3/3" alt="Image 1" />
+              </div>
+              <div className={styles.chiledcat}>
+                <h2 className='px-10 py-2 text-gray-600 text-lg '>Practice Sarees</h2>
+              </div>
+            </Link>
+          </SplideSlide>
+
+          <SplideSlide>
+            <Link href='/category'>
+              <div className={styles.parentcat}>
+                <Image src={Imagebannerd} className="w-3/3" alt="Image 1" />
+              </div>
+              <div className={styles.chiledcat}>
+                <h2 className='px-10 py-2 text-gray-600 text-lg '>temple Jwellery</h2>
+              </div>
+            </Link>
+          </SplideSlide>
+
+          <SplideSlide>
+            <Link href='/category'>
+              <div className={styles.parentcat}>
+                <Image src={Imagebannerc} className="w-3/3" alt="Image 1" />
+              </div>
+              <div className={styles.chiledcat}>
+                <h2 className='px-10 py-2 text-gray-600 text-lg '>Costumes</h2>
+              </div>
+            </Link>
+          </SplideSlide>
+        </Splide>
+      </div>
+
+
+
+
+      {/* <div>
     <Splide aria-label="My Favorite Images">
   <SplideSlide>
   <Image src={Imagebanner} className="w-1/3" alt="Image 1"/>
@@ -136,11 +136,11 @@ const Categories = () => {
 </Splide>
     </div> */}
 
-    <div>
-   
-    </div>
+      <div>
 
- </div>
+      </div>
+
+    </div>
 
   )
 }
