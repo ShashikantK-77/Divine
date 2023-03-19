@@ -1,10 +1,8 @@
 import React from 'react'
-import Signinsv from './signinsv'
+import Adminlogin from './Adminlogin'
 const index = () => {
   return (
-    <div>
-  <Signinsv/>
-    </div>
+    <Adminlogin />
   )
 }
 

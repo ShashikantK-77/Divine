@@ -63,7 +63,7 @@ const Categories = () => {
         >
 
 <SplideSlide>
-            <Link href='/category'>
+            <Link href='/accesssories'>
               <div className={styles.parentcat}>
                 <Image src={Imagebannerd} className="w-3/3" alt="Image 1" />
               </div>
@@ -74,7 +74,7 @@ const Categories = () => {
           </SplideSlide>
 
           <SplideSlide>
-            <Link href='/category'>
+            <Link href='/ornaments'>
               <div className={styles.parentcat}>
                 <Image src={Imagebannerc} className="w-3/3" alt="Image 1" />
               </div>
@@ -85,7 +85,7 @@ const Categories = () => {
           </SplideSlide>
 
           <SplideSlide>
-            <Link href='/category'>
+            <Link href='/global'>
               <div className={styles.parentcat}>
                 <Image src={Imagebannerc} className="w-3/3" alt="Image 1" />
               </div>
@@ -96,7 +96,7 @@ const Categories = () => {
           </SplideSlide>
 
           <SplideSlide>
-            <Link href='/category'>
+            <Link href='/templejwellery'>
               <div className={styles.parentcat}>
                 <Image src={Imagebannerd} className="w-3/3" alt="Image 1" />
               </div>
@@ -107,7 +107,7 @@ const Categories = () => {
           </SplideSlide>
 
           <SplideSlide>
-            <Link href='/category'>
+            <Link href='/costumes'>
               <div className={styles.parentcat}>
                 <Image src={Imagebannerc} className="w-3/3" alt="Image 1" />
               </div>
