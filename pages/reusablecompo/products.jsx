@@ -2,7 +2,8 @@ import Image from 'next/image'
 import React from 'react'
 import abcde from '../../public/category/ornament/belts/a.jpg'
 
-const products = (props) => {
+const products = ({pdetails,...props}) => {
+  const product = pdetails[0]
   return (
     <div>
     
@@ -20,9 +21,9 @@ const products = (props) => {
           <Image alt="ecommerce" width={100} height={100}  class="object-cover object-center w-full h-full block" src= {props.imga}/>
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
-          <p class="mt-1">$16.00</p>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">{product.category}</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">{product.p_name}</h2>
+          <p class="mt-1">{product.p_cost}</p>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
